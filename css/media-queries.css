@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 1024px) {
     #card-container {
-        background-image: url("/images/bg-main-mobile.png");
+        background-image: url("../images/bg-main-mobile.png");
         background-size: cover;
         width: 100vw;
         height: 15.5em;
@@ -35,7 +35,7 @@
         flex-direction: column;
     }
     #card-front {
-        background-image: url("/images/bg-card-front.png");
+        background-image: url("../images/bg-card-front.png");
         grid-row: 6/span 8;
         grid-column: 2/3;
         transform: translate(-8%, 19.5%);
@@ -75,7 +75,7 @@
         gap: 1px;
     }
     #card-back {
-        background-image: url("/images/bg-card-back.png");
+        background-image: url("../images/bg-card-back.png");
         grid-row: 3/span 5;
         grid-column: 2/3;
         transform: translate(8%, 10%);
@@ -177,7 +177,7 @@
 
 @media screen and (min-width: 1025px) {
     #card-container {
-        background-image: url("/images/bg-main-desktop.png");
+        background-image: url("../images/bg-main-desktop.png");
         background-size: cover;
         height: 100vh;
         width: 26vw;
@@ -208,7 +208,7 @@
         flex-direction: column;
     }
     #card-front {
-        background-image: url("/images/bg-card-front.png");
+        background-image: url("../images/bg-card-front.png");
         grid-row: 3/span 4;
         gap: 3.5em;
         transform: translateX(30%);
@@ -246,7 +246,7 @@
         gap: 1px;
     }
     #card-back {
-        background-image: url("/images/bg-card-back.png");
+        background-image: url("../images/bg-card-back.png");
         grid-row: 8/span 3;
         transform: translateX(45%);
     }
