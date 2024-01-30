@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/media-queries.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+
+<body>
+  <div id="layout">
+    <section id="card-container">
+      
+      <div id="card-front">
+        <img src="images/card-logo.svg" alt="Card back image" class="card-logo">
+
+        <div id="card-front-text">
+          <span class="card-text card-number">0000 0000 0000 0000</span>
+
+          <div id="card-info-bottom">
+            <span class="card-text card-name">Jane Appleseed</span>
+
+            <span class="card-text card-date">
+              <span class="card-month">00</span>
+              <span>/</span>
+              <span class="card-year">00</span>
+            </span>
+          </div>          
+        </div>      
+      </div>
+
+      <div id="card-back">
+        <span class="card-text card-cvc">000</span>
+      </div>
+
+    </section>
+  
+    <main>
+      <section id="form-section"> 
+        <form action="#" autocomplete="off" class="form"> 
+  
+          <div class="incomplete">
+  
+            <div class="input-section a">
+              <label for="inputCardName">Cardholder Name</label><br>
+              <input type="text" id="inputCardName"  class="input" placeholder="e.g. Jane Appleseed" maxlength="32" required>
+              <p class="error-message invalid-name"></p>
+            </div>
+      
+            <div class="input-section b">
+              <label for="inputCardNumber">Card Number</label><br>
+              <input type="text" id="inputCardNumber"  class="input" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" required>
+              <p class="error-message invalid-number"></p>
+            </div>
+      
+            <div class="input-section c">
+                <div id="inputs-date">
+                  <label for="inputCardMonth">Exp. Date (MM/YY)</label>
+  
+                  <div>
+                    <input type="text" id="inputCardMonth"  class="input" minlength="2" maxlength="2" placeholder="MM" required>
+  
+                    <input type="text" id="inputCardYear"  class="input" minlength="2" maxlength="2" placeholder="YY" required>
+                  </div>
+  
+                  <p class="error-message invalid-date"></p>
+                </div>
+                
+                <div id="input-cvc">
+                  <label for="inputCardCvc">CVC</label>
+                  <input type="text" id="inputCardCvc"  class="input" minlength="3" maxlength="3" placeholder="e.g. 123" required>
+                  <p class="error-message invalid-cvc"></p>
+                </div>
+            </div>
+          </div>
+  
+          <div class="complete hidden">
+            <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+  
+            <h1>THANK YOU!</h1>
+            <p>We've added your card details</p>
+          </div>
+  
+          <input type="submit" value="Confirm" id="btn-confirm"></input>
+        </form>
+      </section>
+  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/clarabacker" target="_blank">Clara Backer</a>.
+      </div>
+    </main>    
+  </div>
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
